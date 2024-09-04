@@ -1,0 +1,40 @@
+{
+  "name": "tripcost",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node main-project.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ENV=dev nodemon main-project.js",
+    "local": "ENV=local nodemon main-project.js",
+    "rnd": "node main-project"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.1",
+    "edit-json-file": "^1.7.0",
+    "express": "^4.17.3",
+    "flat": "^5.0.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.3",
+    "mongodb": "^3.6.5",
+    "mongoose": "^6.4.4",
+    "mongoose-double": "^0.0.1",
+    "mongoose-long": "^0.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.0",
+    "node-cron": "^3.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "recursive-readdir": "^2.2.2",
+    "recursive-readdir-async": "^1.2.1",
+    "Router": "^2.1.0",
+    "validator": "^13.7.0"
+  }
+}
