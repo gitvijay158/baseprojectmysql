@@ -19,3 +19,11 @@ exports.getRoleDetails = async function (req, res)    {
     });
 }
 
+
+exports.getProfile = async function (req, res)    {
+    dbConn.query('SELECT * FROM profile', function (error, results, fields) {
+        if (error) throw error;
+        res.status(200).send(results);
+    });
+}
+
