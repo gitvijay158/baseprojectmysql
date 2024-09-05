@@ -13,7 +13,7 @@ exports.getServerLogDetails = async function (req, res){
 }
 
 exports.getRoleDetails = async function (req, res)    {
-    dbConn.query('SELECT * FROM role', function (error, results, fields) {
+    dbConn.query('SELECT * FROM role limit 1', function (error, results, fields) {
         if (error) throw error;
         res.status(200).send(results);
     });
