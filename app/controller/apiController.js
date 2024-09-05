@@ -27,3 +27,11 @@ exports.getProfile = async function (req, res)    {
     });
 }
 
+exports.getSchool = async function (req, res)    {
+    dbConn.query('SELECT * FROM school', function (error, results, fields) {
+        if (error) throw error;
+        res.status(200).send(results);
+    });
+}
+
+
